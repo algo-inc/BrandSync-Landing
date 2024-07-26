@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <body >
+    <header id="header">
+    <div class="container">
+      <div class="flex-container">
+        <div class="logo">
+          <svg  viewBox="0 0 240 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.88 14.12L19.44 12.825C21.4933 12.8717 23.1733 13.1867 24.48 13.77C25.81 14.3533 26.79 15.1583 27.42 16.185C28.0733 17.1883 28.4 18.3433 28.4 19.65C28.4 21.0733 28.0733 22.345 27.42 23.465C26.7667 24.5617 25.7867 25.425 24.48 26.055C23.1967 26.685 21.5867 27 19.65 27H0.75L2.78 13.525L0.75 0.749998H18.985C21.4117 0.749998 23.29 1.32166 24.62 2.465C25.9733 3.585 26.65 5.13667 26.65 7.12C26.65 8.21667 26.3933 9.26667 25.88 10.27C25.3667 11.2733 24.55 12.125 23.43 12.825C22.31 13.5017 20.7933 13.9333 18.88 14.12ZM7.26 25.39L4.74 22.275H18.075C19.2183 22.275 20.105 22.0067 20.735 21.47C21.3883 20.91 21.715 20.1283 21.715 19.125C21.715 18.1217 21.3533 17.3283 20.63 16.745C19.93 16.1383 18.88 15.835 17.48 15.835H6.56V11.215H16.64C17.5967 11.215 18.39 10.9467 19.02 10.41C19.65 9.85 19.965 9.09167 19.965 8.135C19.965 7.365 19.685 6.735 19.125 6.245C18.5883 5.73167 17.8183 5.475 16.815 5.475H4.775L7.26 2.36L9.115 13.525L7.26 25.39ZM30.6091 7.05H37.1891L38.3791 14.225V27H31.8691V13.7L30.6091 7.05ZM47.8991 6.77V12.37C47.2691 12.23 46.6391 12.125 46.0091 12.055C45.4024 11.985 44.8424 11.95 44.3291 11.95C43.2091 11.95 42.1941 12.1833 41.2841 12.65C40.3974 13.0933 39.6858 13.805 39.1491 14.785C38.6358 15.765 38.3791 17.0367 38.3791 18.6L37.0841 16.99C37.2474 15.5667 37.5158 14.225 37.8891 12.965C38.2624 11.705 38.7758 10.5967 39.4291 9.64C40.0824 8.66 40.8874 7.89 41.8441 7.33C42.8241 6.77 44.0024 6.49 45.3791 6.49C45.7758 6.49 46.1958 6.51333 46.6391 6.56C47.0824 6.60667 47.5024 6.67667 47.8991 6.77ZM68.107 27L67.232 19.755L68.177 17.025L67.232 14.33L68.107 7.05H74.862L73.637 17.025L74.862 27H68.107ZM69.717 17.025C69.367 19.1483 68.702 21.0033 67.722 22.59C66.742 24.1533 65.5053 25.3783 64.012 26.265C62.5186 27.1283 60.8386 27.56 58.972 27.56C57.012 27.56 55.2853 27.1167 53.792 26.23C52.322 25.3433 51.167 24.1183 50.327 22.555C49.487 20.9683 49.067 19.125 49.067 17.025C49.067 14.925 49.487 13.0933 50.327 11.53C51.167 9.94333 52.322 8.70667 53.792 7.82C55.2853 6.93333 57.012 6.49 58.972 6.49C60.8386 6.49 62.5186 6.93333 64.012 7.82C65.5053 8.68333 66.742 9.89667 67.722 11.46C68.7253 13.0233 69.3903 14.8783 69.717 17.025ZM55.647 17.025C55.647 18.0983 55.8686 19.055 56.312 19.895C56.7553 20.7117 57.362 21.365 58.132 21.855C58.9253 22.3217 59.8353 22.555 60.862 22.555C61.8886 22.555 62.857 22.3217 63.767 21.855C64.7003 21.365 65.517 20.7117 66.217 19.895C66.917 19.055 67.442 18.0983 67.792 17.025C67.442 15.9517 66.917 15.0067 66.217 14.19C65.517 13.35 64.7003 12.6967 63.767 12.23C62.857 11.74 61.8886 11.495 60.862 11.495C59.8353 11.495 58.9253 11.74 58.132 12.23C57.362 12.6967 56.7553 13.35 56.312 14.19C55.8686 15.0067 55.647 15.9517 55.647 17.025ZM77.6062 7.05H84.0812L85.3762 14.82V27H78.8662V13.84L77.6062 7.05ZM92.8312 6.49C94.7445 6.49 96.3662 6.875 97.6962 7.645C99.0495 8.39167 100.076 9.465 100.776 10.865C101.5 12.265 101.861 13.9333 101.861 15.87V27H95.3512V16.85C95.3512 15.1933 94.9428 13.945 94.1262 13.105C93.3095 12.2417 92.1428 11.81 90.6262 11.81C89.5528 11.81 88.6195 12.0433 87.8262 12.51C87.0562 12.9533 86.4495 13.595 86.0062 14.435C85.5862 15.2517 85.3762 16.2317 85.3762 17.375L83.3112 16.29C83.5678 14.1667 84.1395 12.3817 85.0262 10.935C85.9362 9.48833 87.0562 8.39167 88.3862 7.645C89.7395 6.875 91.2212 6.49 92.8312 6.49ZM124.027 27L123.152 19.475L124.342 17.095L123.187 14.085L124.797 0.0499986H131.552L129.557 16.535L130.747 27H124.027ZM125.532 17.025C125.182 19.1483 124.517 21.0033 123.537 22.59C122.557 24.1533 121.321 25.3783 119.827 26.265C118.334 27.1283 116.654 27.56 114.787 27.56C112.827 27.56 111.101 27.1167 109.607 26.23C108.137 25.3433 106.982 24.1183 106.142 22.555C105.302 20.9683 104.882 19.125 104.882 17.025C104.882 14.925 105.302 13.0933 106.142 11.53C106.982 9.94333 108.137 8.70667 109.607 7.82C111.101 6.93333 112.827 6.49 114.787 6.49C116.654 6.49 118.334 6.93333 119.827 7.82C121.321 8.68333 122.557 9.89667 123.537 11.46C124.541 13.0233 125.206 14.8783 125.532 17.025ZM111.462 17.025C111.462 18.0983 111.684 19.055 112.127 19.895C112.571 20.7117 113.177 21.365 113.947 21.855C114.741 22.3217 115.651 22.555 116.677 22.555C117.704 22.555 118.672 22.3217 119.582 21.855C120.516 21.365 121.332 20.7117 122.032 19.895C122.732 19.055 123.257 18.0983 123.607 17.025C123.257 15.9517 122.732 15.0067 122.032 14.19C121.332 13.35 120.516 12.6967 119.582 12.23C118.672 11.74 117.704 11.495 116.677 11.495C115.651 11.495 114.741 11.74 113.947 12.23C113.177 12.6967 112.571 13.35 112.127 14.19C111.684 15.0067 111.462 15.9517 111.462 17.025ZM133.562 18.425H140.247C140.363 19.2183 140.725 19.9183 141.332 20.525C141.938 21.1317 142.743 21.5983 143.747 21.925C144.773 22.2517 145.963 22.415 147.317 22.415C149.253 22.415 150.77 22.1467 151.867 21.61C152.987 21.0733 153.547 20.315 153.547 19.335C153.547 18.5883 153.22 18.0167 152.567 17.62C151.937 17.2 150.747 16.8967 148.997 16.71L143.922 16.185C140.398 15.835 137.843 15.0183 136.257 13.735C134.693 12.4517 133.912 10.7017 133.912 8.485C133.912 6.735 134.425 5.24167 135.452 4.005C136.502 2.76833 137.96 1.82333 139.827 1.17C141.717 0.516665 143.922 0.189999 146.442 0.189999C148.938 0.189999 151.143 0.551666 153.057 1.275C154.97 1.99833 156.498 3.00166 157.642 4.285C158.785 5.56833 159.403 7.07333 159.497 8.8H152.812C152.718 8.07667 152.392 7.47 151.832 6.98C151.295 6.46667 150.56 6.07 149.627 5.79C148.717 5.48667 147.62 5.335 146.337 5.335C144.563 5.335 143.152 5.59167 142.102 6.105C141.075 6.595 140.562 7.30667 140.562 8.24C140.562 8.94 140.865 9.48833 141.472 9.885C142.102 10.2817 143.21 10.5733 144.797 10.76L150.152 11.355C152.602 11.6117 154.562 12.02 156.032 12.58C157.502 13.14 158.563 13.91 159.217 14.89C159.87 15.87 160.197 17.1067 160.197 18.6C160.197 20.3967 159.648 21.9717 158.552 23.325C157.478 24.655 155.962 25.6933 154.002 26.44C152.065 27.1867 149.802 27.56 147.212 27.56C144.528 27.56 142.172 27.175 140.142 26.405C138.135 25.635 136.548 24.5733 135.382 23.22C134.238 21.8433 133.632 20.245 133.562 18.425ZM168.826 33.335C167.426 33.335 166.177 33.16 165.081 32.81C164.007 32.46 162.957 31.935 161.931 31.235V26.65C162.981 27.3267 163.961 27.805 164.871 28.085C165.804 28.3883 166.819 28.54 167.916 28.54C168.896 28.54 169.747 28.33 170.471 27.91C171.217 27.49 171.836 26.72 172.326 25.6L180.306 7.05H187.201L177.436 27.63C176.782 29.03 176.001 30.15 175.091 30.99C174.181 31.83 173.189 32.425 172.116 32.775C171.066 33.1483 169.969 33.335 168.826 33.335ZM169.596 25.425L160.951 7.05H168.091L175.861 25.425H169.596ZM188.417 7.05H194.892L196.187 14.82V27H189.677V13.84L188.417 7.05ZM203.642 6.49C205.555 6.49 207.177 6.875 208.507 7.645C209.86 8.39167 210.887 9.465 211.587 10.865C212.31 12.265 212.672 13.9333 212.672 15.87V27H206.162V16.85C206.162 15.1933 205.753 13.945 204.937 13.105C204.12 12.2417 202.953 11.81 201.437 11.81C200.363 11.81 199.43 12.0433 198.637 12.51C197.867 12.9533 197.26 13.595 196.817 14.435C196.397 15.2517 196.187 16.2317 196.187 17.375L194.122 16.29C194.378 14.1667 194.95 12.3817 195.837 10.935C196.747 9.48833 197.867 8.39167 199.197 7.645C200.55 6.875 202.032 6.49 203.642 6.49ZM239.913 18.705C239.726 20.455 239.073 21.995 237.953 23.325C236.856 24.655 235.433 25.6933 233.683 26.44C231.956 27.1867 230.008 27.56 227.838 27.56C225.435 27.56 223.311 27.1167 221.468 26.23C219.625 25.3433 218.19 24.1067 217.163 22.52C216.136 20.9333 215.623 19.1017 215.623 17.025C215.623 14.9483 216.136 13.1167 217.163 11.53C218.19 9.94333 219.625 8.70667 221.468 7.82C223.311 6.93333 225.435 6.49 227.838 6.49C230.008 6.49 231.956 6.86333 233.683 7.61C235.433 8.35667 236.856 9.395 237.953 10.725C239.073 12.0317 239.726 13.5717 239.913 15.345H233.438C233.181 14.0617 232.54 13.0817 231.513 12.405C230.51 11.7283 229.285 11.39 227.838 11.39C226.695 11.39 225.691 11.6117 224.828 12.055C223.988 12.4983 223.335 13.14 222.868 13.98C222.401 14.82 222.168 15.835 222.168 17.025C222.168 18.215 222.401 19.23 222.868 20.07C223.335 20.91 223.988 21.5517 224.828 21.995C225.691 22.4383 226.695 22.66 227.838 22.66C229.308 22.66 230.545 22.31 231.548 21.61C232.551 20.8867 233.181 19.9183 233.438 18.705H239.913Z" fill="#151515"/>
+          </svg>
+        </div>
+        <nav class="navigation-desktop">
+          <a href="#offerings">Offerings</a>
+          <a href="#approaches">Approaches</a>
+          <a href="#about">Who We Are</a>
+          <a href="#procedure">Procedure</a>
+          <a href="#team">Team</a>
+          <a href="#technology">Technology</a>
+          <a href="#contacts"> Contacts</a>
+        </nav>
+        <button id="menu-button" class="menu-btn">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-navigation" id="mobile-nav">
+      <nav class="navigation">
+        <a href="#offerings">Offerings</a>
+        <a href="#approaches">Approaches</a>
+        <a href="#about">Who We Are</a>
+        <a href="#procedure">Procedure</a>
+        <a href="#team">Team</a>
+        <a href="#technology">Technology</a>
+        <a href="#contacts"> Contacts</a>
+      </nav>
+    </div>
+  </header>
+    <script>
+    document.getElementById('menu-button').addEventListener('click', function () {
+      this.classList.toggle('active');
+      document.getElementById('mobile-nav').classList.toggle('active');
+      document.getElementById('header').classList.toggle('mobile-menu-active');
+    });
+    const menuButton = document.getElementById('menu-button');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    const navLinks = document.querySelectorAll('.navigation a');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        menuButton.classList.remove('active');
+        mobileNav.classList.remove('active');
+      });
+    });
+  </script>
+    <section class="welcome">
+      <div class="welcome-wrapper">
+
+        <div class="container">
+          <div class="flex-container">
+            <h1 class="main-title">
+              Welcome <br>
+              to BrandSync
+              Solutions
+            </h1>
+            <div class="flex-column">
+              <p>
+                Your go-to partner in the realm of digital marketing. We empower businesses with state-of-the-art technologies and strategies to ensure their growth and success.
+              </p>
+              <p>
+                As a premier SEO and content-focused agency, we strive for excellence and refuse to settle for mediocrity.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="why-choose-us">
+      <div class="container">
+        <div class="flex-column-container">
+          <h2 class="title">
+            Why Choose Us?
+          </h2>
+          <p>
+            Your go-to partner in the realm of digital marketing. We empower businesses with state-of-the-art technologies and strategies to ensure their growth and success.
+          </p>
+          <p>As a premier SEO and content-focused agency, we strive for excellence and refuse to settle for mediocrity.</p>
+        </div>
+      </div>
+    </section>
+    <section class="services" id="offerings">
+      <svg  class="yellow-blure" viewBox="0 0 1920 2626" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_f_674_48)">
+          <ellipse cx="921" cy="1313" rx="672" ry="313" fill="#F2CB00"/>
+        </g>
+        <defs>
+          <filter id="filter0_f_674_48" x="-751" y="0" width="3344" height="2626" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="500" result="effect1_foregroundBlur_674_48"/>
+          </filter>
+        </defs>
+      </svg>
+      <div class="container">
+        <h2 class="title">
+          Offerings
+        </h2>
+      </div>
+      <div class="container">
+        <div class="grid-container">
+          <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <h2>SEO Audit</h2>
+            <p>Gain essential recommendations on your website’s technical health.</p>
+          </div>
+
+          <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <h2>SEO-driven content strategies</h2>
+            <p>Boost brand visibility with strategic content designed to build lasting relationships with your audience.</p>
+          </div>
+
+          <div class="card" data-aos="fade-up" data-aos-delay="300">
+            <h2>Content Creating</h2>
+            <p>Build loyalty, trust, and authority with engaging content.</p>
+          </div>
+
+          <div class="card" data-aos="fade-up" data-aos-delay="400">
+            <h2>CMS Migration</h2>
+            <p>Enhance user experience, security, and website performance with advanced functionalities.</p>
+          </div>
+
+          <div class="card" data-aos="fade-up" data-aos-delay="500">
+            <h2>Website Architecture</h2>
+            <p>Develop a high-performing website that guides your audience seamlessly.</p>
+          </div>
+
+          <div class="card" data-aos="fade-up" data-aos-delay="600">
+            <h2>Support and training</h2>
+            <p>Receive up-to-date insights and recommendations from our team of SEO experts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="approaches" data-aos="zoom-in" id="approaches" >
+      <div class="container">
+        <div class="flex-container">
+          <div class="text">
+            <h2 class="title">
+              Approaches
+            </h2>
+            <p>
+              We provide a comprehensive range of customized development and marketing solutions to help small and medium-sized businesses excel in the digital landscape. Trust us to deliver transparent, high-quality solutions tailored to your specific needs.
+            </p>
+          </div>
+          <div class="numbers">
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="count" data-count="150">0</h3>
+              <p>satisfied clients</p>
+            </div>
+            <div class="row" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="count" data-count="10">0</h3>
+              <p>of experience in growing ambitious businesses through top-notch marketing solutions</p>
+            </div>
+            <div class="row" data-aos="fade-up" data-aos-delay="300">
+              <h3 class="count" data-count="1000">0</h3>
+              <p>successful project cases</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="title " data-aos="fade-up">
+          About
+        </h2>
+      </div>
+      <div class="container">
+        <div class="grid-container">
+          <div class="card">
+            <p>
+              We are a digital marketing agency offering web design and development, eCommerce development, SEO,
+              content marketing, PPC, social media marketing, and more. Explore our services below and find the
+              right fit for your needs!
+            </p>
+          </div>
+          <div class="card">
+            <p>
+              Our team of SEO and digital strategy specialists operates with full transparency and uncompromising
+              dedication to achieving long-term success for our clients. We help companies of various scales and
+              industries effectively leverage the power of the internet to grow their businesses and achieve
+              significant results.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="procedure" id="procedure">
+      <div class="container">
+
+        <h2 class="title" data-aos="fade-up">
+          Our Simple Procedure
+        </h2>
+
+      </div>
+      <div class="container">
+        <div class="flex-container">
+          <div class="card">
+            <h3>
+              Competitive Strategy Call
+            </h3>
+            <p>
+              We learn about your business goals and determine how we can help you achieve them. We also address any questions you have about our process and what to expect from working with us.
+            </p>
+          </div>
+          <div class="card">
+            <h3>
+              Campaign Planning
+            </h3>
+            <p>
+              We conduct keyword research, audience analysis, gather ad copy insights, create and optimize landing pages, track results, and more, all supported by AI and digital marketing experts.
+            </p>
+          </div>
+          <div class="card">
+            <h3>
+              Campaign Launch & Optimization
+            </h3>
+            <p>
+              We launch campaigns and monitor them daily, analyzing every detail to enhance performance, reduce costs, and maximize your brand’s return on investment.
+            </p>
+          </div>
+          <div class="card">
+            <h3>
+              Scaling & Reporting
+            </h3>
+            <p>
+              We report on performance metrics during meetings with your dedicated account manager. These meetings generate recommendations for performance improvements and new campaign ideas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="our-team" id="team">
+        <div class="container">
+          <div class="flex-container">
+            <div class="image">
+              <img src="/images/our-team.png" alt="team">
+            </div>
+            <div class="content">
+              <h2 class="title" data-aos="fade-up">Our Team</h2>
+              <p>
+                Our team is the heartbeat of our organization.
+              </p>
+              <p>
+                We prioritize recruiting exceptional talent and invest in their growth and development. As our business expands, our team members grow alongside it, forming a mutually beneficial partnership.
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <h2 class="title" data-aos="fade-up">
+          Reviews
+        </h2>
+      </div>
+      <div class="swiper reviews-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonial-author">Natalie V.</div>
+            <div class="testimonial-text">
+              DFLab created unique and engaging content for us and developed a long-term content marketing strategy. This helped us strengthen our market position and build trustful relationships with clients
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-author">Serge P.</div>
+            <div class="testimonial-text">
+              After conducting a technical audit of our site, DFLab's team provided us with detailed recommendations and held several consultations. As a result, we significantly improved our site and SEO metrics.
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-author"> Anna R.</div>
+            <div class="testimonial-text">
+              We entrusted DFLab with migrating our site to a new CMS and optimizing its architecture. The result exceeded all expectations: the site became faster, more secure, and user-friendly. Thanks for the great work!
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-author">Olga N.</div>
+            <div class="testimonial-text">
+              Thanks to DFLab's training sessions and campaign planning, our team became more confident in their actions, and the campaign results improved. We're happy with the collaboration and recommend their services.
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-author">Michael T.</div>
+            <div class="testimonial-text">
+              DFLab helped us launch effective marketing campaigns and provided valuable SEO consultations. Their support and professionalism had a significant impact on our business. We see real growth and are grateful for the partnership.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="final-block" id="technology">
+      <div class="container">
+        <div class="flex-column-container">
+            <div class="row">
+              <h2 data-aos="fade-up">Our Values</h2>
+              <p>
+                Our values are the foundation of our organization and guide our every action.
+              </p>
+              <p>
+                We uphold and cherish the values of respect, trust, passion, integrity, responsibility, diversity, and customer commitment. These core principles drive us and inspire us to excel in everything we do. With these values at the forefront, we foster a culture of excellence, collaboration, and unwavering dedication to our clients and their success.
+              </p>
+            </div>
+          <div class="row">
+              <h2 data-aos="fade-up">
+                Our Technology
+              </h2>
+            <p>
+              Technology should enhance creativity, not hinder it.
+            </p>
+            <p>
+              To deliver exceptional results, we utilize an industry-standard tech stack, including renowned software such as SEMrush, Adobe Creative Cloud, Google Workspace, Grammarly, ClickUp, Hubspot, and Chat GPT. By harnessing the power of these tools, we empower our team to unlock their creative potential and deliver outstanding outcomes for our valued clients.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <div class="flex-container">
+          <div class="content">
+            <h2 class="title" data-aos="zoom-in-right">
+              Contact Us
+            </h2>
+            <p>
+              Get in touch with us today to discuss how we can help your business grow and thrive!
+            </p>
+            <p>
+              Let me know if you need any further adjustments or additions!
+            </p>
+          </div>
+          <div class="form-container">
+            <form action="">
+              <div class="flex-column-container">
+                <div class="row">
+                  <input type="text" placeholder="Name *" required>
+                  <input type="email" placeholder="Email *" required>
+                  <input type="text" placeholder="Your website *" required>
+                </div>
+                <div class="row">
+                  <select required>
+                    <option value="" disabled selected>Select service *</option>
+                    <option value="seo-audit">SEO Audit</option>
+                    <option value="seo-content-strategies">SEO-driven content strategies</option>
+                    <option value="content-creating">Content Creating</option>
+                    <option value="cms-migration">CMS Migration</option>
+                    <option value="website-architecture">Website Architecture</option>
+                    <option value="support-training">Support and training</option>
+                  </select>
+                </div>
+                <div class="row">
+                  <textarea placeholder="Your message *" required></textarea>
+                </div>
+                <button type="submit">Submit
+                  <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_703_357)">
+                      <path d="M3.60693 17.5601L17.3955 3.77148" stroke="white" stroke-width="1.52" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M9.97049 3.77158H17.3951V11.1962" stroke="white" stroke-width="1.52" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_703_357">
+                        <rect width="21" height="21" fill="white" transform="translate(0 0.166504)"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const swiper = new Swiper('.reviews-swiper', {
+        slidesPerView: 3.5,
+        spaceBetween: 30,
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1.2,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3.5,
+            spaceBetween: 30,
+          }
+
+        }
+      });
+    </script>
+    <footer>
+      <div class="container">
+        <div class="flex-container">
+          <div class="logo-container">
+            <svg  width="240" height="34" viewBox="0 0 240 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.88 14.12L19.44 12.825C21.4933 12.8717 23.1733 13.1867 24.48 13.77C25.81 14.3533 26.79 15.1583 27.42 16.185C28.0733 17.1883 28.4 18.3433 28.4 19.65C28.4 21.0733 28.0733 22.345 27.42 23.465C26.7667 24.5617 25.7867 25.425 24.48 26.055C23.1967 26.685 21.5867 27 19.65 27H0.75L2.78 13.525L0.75 0.749998H18.985C21.4117 0.749998 23.29 1.32166 24.62 2.465C25.9733 3.585 26.65 5.13667 26.65 7.12C26.65 8.21667 26.3933 9.26667 25.88 10.27C25.3667 11.2733 24.55 12.125 23.43 12.825C22.31 13.5017 20.7933 13.9333 18.88 14.12ZM7.26 25.39L4.74 22.275H18.075C19.2183 22.275 20.105 22.0067 20.735 21.47C21.3883 20.91 21.715 20.1283 21.715 19.125C21.715 18.1217 21.3533 17.3283 20.63 16.745C19.93 16.1383 18.88 15.835 17.48 15.835H6.56V11.215H16.64C17.5967 11.215 18.39 10.9467 19.02 10.41C19.65 9.85 19.965 9.09167 19.965 8.135C19.965 7.365 19.685 6.735 19.125 6.245C18.5883 5.73167 17.8183 5.475 16.815 5.475H4.775L7.26 2.36L9.115 13.525L7.26 25.39ZM30.6091 7.05H37.1891L38.3791 14.225V27H31.8691V13.7L30.6091 7.05ZM47.8991 6.77V12.37C47.2691 12.23 46.6391 12.125 46.0091 12.055C45.4024 11.985 44.8424 11.95 44.3291 11.95C43.2091 11.95 42.1941 12.1833 41.2841 12.65C40.3974 13.0933 39.6858 13.805 39.1491 14.785C38.6358 15.765 38.3791 17.0367 38.3791 18.6L37.0841 16.99C37.2474 15.5667 37.5158 14.225 37.8891 12.965C38.2624 11.705 38.7758 10.5967 39.4291 9.64C40.0824 8.66 40.8874 7.89 41.8441 7.33C42.8241 6.77 44.0024 6.49 45.3791 6.49C45.7758 6.49 46.1958 6.51333 46.6391 6.56C47.0824 6.60667 47.5024 6.67667 47.8991 6.77ZM68.107 27L67.232 19.755L68.177 17.025L67.232 14.33L68.107 7.05H74.862L73.637 17.025L74.862 27H68.107ZM69.717 17.025C69.367 19.1483 68.702 21.0033 67.722 22.59C66.742 24.1533 65.5053 25.3783 64.012 26.265C62.5186 27.1283 60.8386 27.56 58.972 27.56C57.012 27.56 55.2853 27.1167 53.792 26.23C52.322 25.3433 51.167 24.1183 50.327 22.555C49.487 20.9683 49.067 19.125 49.067 17.025C49.067 14.925 49.487 13.0933 50.327 11.53C51.167 9.94333 52.322 8.70667 53.792 7.82C55.2853 6.93333 57.012 6.49 58.972 6.49C60.8386 6.49 62.5186 6.93333 64.012 7.82C65.5053 8.68333 66.742 9.89667 67.722 11.46C68.7253 13.0233 69.3903 14.8783 69.717 17.025ZM55.647 17.025C55.647 18.0983 55.8686 19.055 56.312 19.895C56.7553 20.7117 57.362 21.365 58.132 21.855C58.9253 22.3217 59.8353 22.555 60.862 22.555C61.8886 22.555 62.857 22.3217 63.767 21.855C64.7003 21.365 65.517 20.7117 66.217 19.895C66.917 19.055 67.442 18.0983 67.792 17.025C67.442 15.9517 66.917 15.0067 66.217 14.19C65.517 13.35 64.7003 12.6967 63.767 12.23C62.857 11.74 61.8886 11.495 60.862 11.495C59.8353 11.495 58.9253 11.74 58.132 12.23C57.362 12.6967 56.7553 13.35 56.312 14.19C55.8686 15.0067 55.647 15.9517 55.647 17.025ZM77.6062 7.05H84.0812L85.3762 14.82V27H78.8662V13.84L77.6062 7.05ZM92.8312 6.49C94.7445 6.49 96.3662 6.875 97.6962 7.645C99.0495 8.39167 100.076 9.465 100.776 10.865C101.5 12.265 101.861 13.9333 101.861 15.87V27H95.3512V16.85C95.3512 15.1933 94.9428 13.945 94.1262 13.105C93.3095 12.2417 92.1428 11.81 90.6262 11.81C89.5528 11.81 88.6195 12.0433 87.8262 12.51C87.0562 12.9533 86.4495 13.595 86.0062 14.435C85.5862 15.2517 85.3762 16.2317 85.3762 17.375L83.3112 16.29C83.5678 14.1667 84.1395 12.3817 85.0262 10.935C85.9362 9.48833 87.0562 8.39167 88.3862 7.645C89.7395 6.875 91.2212 6.49 92.8312 6.49ZM124.027 27L123.152 19.475L124.342 17.095L123.187 14.085L124.797 0.0499986H131.552L129.557 16.535L130.747 27H124.027ZM125.532 17.025C125.182 19.1483 124.517 21.0033 123.537 22.59C122.557 24.1533 121.321 25.3783 119.827 26.265C118.334 27.1283 116.654 27.56 114.787 27.56C112.827 27.56 111.101 27.1167 109.607 26.23C108.137 25.3433 106.982 24.1183 106.142 22.555C105.302 20.9683 104.882 19.125 104.882 17.025C104.882 14.925 105.302 13.0933 106.142 11.53C106.982 9.94333 108.137 8.70667 109.607 7.82C111.101 6.93333 112.827 6.49 114.787 6.49C116.654 6.49 118.334 6.93333 119.827 7.82C121.321 8.68333 122.557 9.89667 123.537 11.46C124.541 13.0233 125.206 14.8783 125.532 17.025ZM111.462 17.025C111.462 18.0983 111.684 19.055 112.127 19.895C112.571 20.7117 113.177 21.365 113.947 21.855C114.741 22.3217 115.651 22.555 116.677 22.555C117.704 22.555 118.672 22.3217 119.582 21.855C120.516 21.365 121.332 20.7117 122.032 19.895C122.732 19.055 123.257 18.0983 123.607 17.025C123.257 15.9517 122.732 15.0067 122.032 14.19C121.332 13.35 120.516 12.6967 119.582 12.23C118.672 11.74 117.704 11.495 116.677 11.495C115.651 11.495 114.741 11.74 113.947 12.23C113.177 12.6967 112.571 13.35 112.127 14.19C111.684 15.0067 111.462 15.9517 111.462 17.025ZM133.562 18.425H140.247C140.363 19.2183 140.725 19.9183 141.332 20.525C141.938 21.1317 142.743 21.5983 143.747 21.925C144.773 22.2517 145.963 22.415 147.317 22.415C149.253 22.415 150.77 22.1467 151.867 21.61C152.987 21.0733 153.547 20.315 153.547 19.335C153.547 18.5883 153.22 18.0167 152.567 17.62C151.937 17.2 150.747 16.8967 148.997 16.71L143.922 16.185C140.398 15.835 137.843 15.0183 136.257 13.735C134.693 12.4517 133.912 10.7017 133.912 8.485C133.912 6.735 134.425 5.24167 135.452 4.005C136.502 2.76833 137.96 1.82333 139.827 1.17C141.717 0.516665 143.922 0.189999 146.442 0.189999C148.938 0.189999 151.143 0.551666 153.057 1.275C154.97 1.99833 156.498 3.00166 157.642 4.285C158.785 5.56833 159.403 7.07333 159.497 8.8H152.812C152.718 8.07667 152.392 7.47 151.832 6.98C151.295 6.46667 150.56 6.07 149.627 5.79C148.717 5.48667 147.62 5.335 146.337 5.335C144.563 5.335 143.152 5.59167 142.102 6.105C141.075 6.595 140.562 7.30667 140.562 8.24C140.562 8.94 140.865 9.48833 141.472 9.885C142.102 10.2817 143.21 10.5733 144.797 10.76L150.152 11.355C152.602 11.6117 154.562 12.02 156.032 12.58C157.502 13.14 158.563 13.91 159.217 14.89C159.87 15.87 160.197 17.1067 160.197 18.6C160.197 20.3967 159.648 21.9717 158.552 23.325C157.478 24.655 155.962 25.6933 154.002 26.44C152.065 27.1867 149.802 27.56 147.212 27.56C144.528 27.56 142.172 27.175 140.142 26.405C138.135 25.635 136.548 24.5733 135.382 23.22C134.238 21.8433 133.632 20.245 133.562 18.425ZM168.826 33.335C167.426 33.335 166.177 33.16 165.081 32.81C164.007 32.46 162.957 31.935 161.931 31.235V26.65C162.981 27.3267 163.961 27.805 164.871 28.085C165.804 28.3883 166.819 28.54 167.916 28.54C168.896 28.54 169.747 28.33 170.471 27.91C171.217 27.49 171.836 26.72 172.326 25.6L180.306 7.05H187.201L177.436 27.63C176.782 29.03 176.001 30.15 175.091 30.99C174.181 31.83 173.189 32.425 172.116 32.775C171.066 33.1483 169.969 33.335 168.826 33.335ZM169.596 25.425L160.951 7.05H168.091L175.861 25.425H169.596ZM188.417 7.05H194.892L196.187 14.82V27H189.677V13.84L188.417 7.05ZM203.642 6.49C205.555 6.49 207.177 6.875 208.507 7.645C209.86 8.39167 210.887 9.465 211.587 10.865C212.31 12.265 212.672 13.9333 212.672 15.87V27H206.162V16.85C206.162 15.1933 205.753 13.945 204.937 13.105C204.12 12.2417 202.953 11.81 201.437 11.81C200.363 11.81 199.43 12.0433 198.637 12.51C197.867 12.9533 197.26 13.595 196.817 14.435C196.397 15.2517 196.187 16.2317 196.187 17.375L194.122 16.29C194.378 14.1667 194.95 12.3817 195.837 10.935C196.747 9.48833 197.867 8.39167 199.197 7.645C200.55 6.875 202.032 6.49 203.642 6.49ZM239.913 18.705C239.726 20.455 239.073 21.995 237.953 23.325C236.856 24.655 235.433 25.6933 233.683 26.44C231.956 27.1867 230.008 27.56 227.838 27.56C225.435 27.56 223.311 27.1167 221.468 26.23C219.625 25.3433 218.19 24.1067 217.163 22.52C216.136 20.9333 215.623 19.1017 215.623 17.025C215.623 14.9483 216.136 13.1167 217.163 11.53C218.19 9.94333 219.625 8.70667 221.468 7.82C223.311 6.93333 225.435 6.49 227.838 6.49C230.008 6.49 231.956 6.86333 233.683 7.61C235.433 8.35667 236.856 9.395 237.953 10.725C239.073 12.0317 239.726 13.5717 239.913 15.345H233.438C233.181 14.0617 232.54 13.0817 231.513 12.405C230.51 11.7283 229.285 11.39 227.838 11.39C226.695 11.39 225.691 11.6117 224.828 12.055C223.988 12.4983 223.335 13.14 222.868 13.98C222.401 14.82 222.168 15.835 222.168 17.025C222.168 18.215 222.401 19.23 222.868 20.07C223.335 20.91 223.988 21.5517 224.828 21.995C225.691 22.4383 226.695 22.66 227.838 22.66C229.308 22.66 230.545 22.31 231.548 21.61C232.551 20.8867 233.181 19.9183 233.438 18.705H239.913Z" fill="#151515"/>
+            </svg>
+            <div class="location">
+              Tallinn, Estonia
+            </div>
+            <div class="socials">
+              <a href="mailto:info@df-lab.com" title="mail">
+                <svg width="35" height="30" viewBox="0 0 35 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.71484 5.1582L17.4214 16.1119L31.1279 5.1582" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M29.4131 2.00391H5.42663C3.53416 2.00391 2 3.66633 2 5.71703V24.2826C2 26.3333 3.53416 27.9958 5.42663 27.9958H29.4131C31.3056 27.9958 32.8397 26.3333 32.8397 24.2826V5.71703C32.8397 3.66633 31.3056 2.00391 29.4131 2.00391Z" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                info@df-lab.com
+              </a>
+            </div>
+            <a href="#" class="copyright">
+              Copyright © 2024. All rights reserved.
+            </a>
+          </div>
+          <nav class="navigation">
+            <a href="#offerings">Offerings</a>
+            <a href="#solution">Approaches</a>
+            <a href="#about">Who We Are</a>
+            <a href="#procedure">Procedure</a>
+            <a href="#team">Team</a>
+            <a href="#technology">Technology</a>
+            <a href="#contacts"> Contacts</a>
+          </nav>
+          <a  href="#" class="copyright-mobile">
+            Copyright © 2024. All rights reserved.
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
